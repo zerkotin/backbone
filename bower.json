@@ -1,0 +1,22 @@
+{
+  "name": "backbone-presentation",
+  "homepage": "https://github.com/zerkotin/backbone-presentation",
+  "description": "my backbone website",
+  "main": "bld/coffee/index.js",
+  "moduleType": [],
+  "authors": [
+    "zerkotin"
+  ],
+  "license": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.3",
+    "jquery": "~2.1.4"
+  }
+}
