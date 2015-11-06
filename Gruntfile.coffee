@@ -5,7 +5,7 @@ module.exports = (grunt) ->
 
     browserify:
       js:
-        src: 'bld/index.js',
+        src: 'bld/src/coffee/index.js',
         dest: 'app/index.js'
 
     watch:
@@ -20,15 +20,14 @@ module.exports = (grunt) ->
       development:
         files: {'app/index.css': 'src/style/index.less'}
 
-    coffee:
+    coffee: # need to fix the coffee transpile
       compile:
-        options:
-          bare: false
-          join: false
-          sourceMap: true
-          flatten: false
-        files:
-          'bld/index.js': ['src/coffee/**/*.coffee']
+        expand: true,
+        flatten: false,
+        cwd: './',
+        src: ['src/**/*.coffee'],
+        dest: 'bld/',
+        ext: '.js'
 
 
 
