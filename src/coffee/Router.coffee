@@ -1,8 +1,11 @@
+{HelloWorldView} = require './HelloWorldView'
 
 exports.Router = class Router extends Backbone.Router
+
+  currentView: null
 
   routes:
     '': 'default'
 
   default: ->
-    # load a view here
+    currentView = new HelloWorldView(el: $('body'))
