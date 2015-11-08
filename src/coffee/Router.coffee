@@ -1,4 +1,5 @@
 {HelloWorldView} = require './HelloWorldView'
+{TestView} = require './TestView'
 
 exports.Router = class Router extends Backbone.Router
 
@@ -6,6 +7,25 @@ exports.Router = class Router extends Backbone.Router
 
   routes:
     '': 'default'
+    'test': 'test'
 
   default: ->
-    currentView = new HelloWorldView(el: $('body'))
+    @_openNewPage('hellow-world-container', HelloWorldView, {})
+
+  test: ->
+    @_openNewPage('test-container', TestView, {})
+
+  _openNewPage: (className, viewConstructor, options) ->
+    @currentView?.remove()
+
+    $el = $(containerTemplate className)
+    $('body').append $el
+
+    viewOptions = $.extend(true, {el: $el}, options)
+
+    @currentView = new viewConstructor(viewOptions)
+
+containerTemplate = (className) ->
+  """
+  <div class="#{className}"></div>
+  """
