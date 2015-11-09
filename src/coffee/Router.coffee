@@ -10,7 +10,7 @@ exports.Router = class Router extends Backbone.Router
     'test': 'test'
 
   default: ->
-    @_openNewPage('hellow-world-container', HelloWorldView, {})
+    @_openNewPage('hello-world-container', HelloWorldView, {})
 
   test: ->
     @_openNewPage('test-container', TestView, {})

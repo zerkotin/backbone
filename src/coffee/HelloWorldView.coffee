@@ -17,5 +17,5 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
 
 template = ->
   """
-  <div class="hello-world-title">HEllO World! :)</div>
+  <div class="hello-world-title">HELLO World! :)</div>
   """
