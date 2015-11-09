@@ -1,5 +1,5 @@
 
-exorts.TabsView = class TabsView extends Backbone.View
+exports.TabsView = class TabsView extends Backbone.View
 
   tabs: null
   currentTab: null
@@ -15,9 +15,9 @@ exorts.TabsView = class TabsView extends Backbone.View
     $tabsElement = $(template())
     @$el.append($tabsElement)
 
-    $titlesElement = $tabsElement.find('.tabs-titles')
+    $titlesElement = @$el.find('.tabs-titles')
 
-    @tabs.foreach (tab, i) ->
+    for tab,i in @tabs
       $titlesElement.append(titleTemplate(tab.name))
 
       if(i is 0) # default is first
@@ -27,7 +27,9 @@ exorts.TabsView = class TabsView extends Backbone.View
     $item = $(event.currentTarget)
     tabName = $item.data('name')
 
-    #search in tabs a tab with that name
+    selectedTab = _.findWhere(@tabs, {name: tabName})
+    @_selectTab(selectedTab)
+
 
   _selectTab: (tab) ->
     $contentContainer = @$el.find('.content-container')
@@ -55,7 +57,7 @@ template = ->
 
 contentTemplate = ->
   """
-  <div class="tab-content"></div>
+  <div class="tabs-content"></div>
   """
 
 titleTemplate = (title) ->
