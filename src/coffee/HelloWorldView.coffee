@@ -4,7 +4,7 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
   className: 'hello-world-view'
 
   events:
-    'click .hello-world-title': '_gotoNextPage'
+    'click .hello-world-title': '_titleClicked'
 
   initialize: ->
     @render()
@@ -12,7 +12,7 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
   render: ->
     @$el.append template()
 
-  _gotoNextPage: ->
+  _titleClicked: ->
     Backbone.history.navigate('test', {trigger: yes})
 
 template = ->
