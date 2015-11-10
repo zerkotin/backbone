@@ -1,15 +1,14 @@
+//if you want a server, run 'npm install express' first
+//i didnt want to include it in the package.json since it has nothing to do with it
 var express = require("express");
 var app = express();
 
-/* serves main page */
 app.get("/", function(req, res) {
    res.sendfile('index.html')
 });
 
 
-/* serves all the static files */
 app.get(/^(.+)$/, function(req, res){
-    console.log('static file request : ' + req.params);
     res.sendfile( __dirname + req.params[0]);
 });
 
