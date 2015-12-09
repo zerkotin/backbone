@@ -8,7 +8,7 @@ exports.TextView = class TextView extends Backbone.View
     @render()
 
   render: ->
-    @$el.append template(@text)
+    @$el.empty().append template(@text)
 
 template = (text) ->
   """

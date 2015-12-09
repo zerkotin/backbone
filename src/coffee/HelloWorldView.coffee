@@ -20,14 +20,14 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
 
     tabsView = new TabsView(el: $tabsElement, tabs: [
       {
-        name: 'tab1'
+        name: 'itzik'
         viewConstructor: TextView
-        viewOptions: {text: 'i am tab 1'}
+        viewOptions: {text: 'i am tab Itzik'}
       }
       {
-        name: 'tab2'
+        name: 'resa'
         viewConstructor: TextView
-        viewOptions: {text: 'i am tab 2'}
+        viewOptions: {text: 'i am tab Theresa'}
       }
       ])
 

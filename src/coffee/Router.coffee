@@ -1,5 +1,5 @@
 {HelloWorldView} = require './HelloWorldView'
-{TestView} = require './TestView'
+{TextView} = require './TextView'
 
 exports.Router = class Router extends Backbone.Router
 
@@ -13,7 +13,7 @@ exports.Router = class Router extends Backbone.Router
     @_openNewPage('hello-world-container', HelloWorldView, {})
 
   test: ->
-    @_openNewPage('test-container', TestView, {})
+    @_openNewPage('test-container', TextView, {text: 'i am a Test View, i came from another page'})
 
   _openNewPage: (className, viewConstructor, options) ->
     @currentView?.remove()
