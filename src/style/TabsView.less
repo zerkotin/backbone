@@ -1,19 +1,39 @@
-.tabs-titles {
-  border: 1px solid black;
+.my-tabs-component {
+  margin-top: 10px;
 
-  .tab-title {
-    cursor: pointer;
+  .tabs-titles {
+    border-bottom: 1px solid lightgrey;
 
-    &:hover {
-      background-color: pink;
+    .tab-title {
+      cursor: pointer;
+      border-left: 1px solid lightgrey;
+      border-right: 1px solid lightgrey;
+      border-top: 1px solid lightgrey;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding: 0 5px 0 5px;
+      margin-left: 5px;
+      background-color: lightgrey;
+
+
+      &:hover {
+        background-color: pink;
+      }
+
+      &.active {
+        background-color: white;
+      }
+
     }
-
-    &.active {
-      background-color: turquoise;
-    }
-
   }
-}
-.content-container {
-  border: 1px solid green;
+  .content-container {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    padding: 5px 5px 5px 5px;
+  }
+
 }

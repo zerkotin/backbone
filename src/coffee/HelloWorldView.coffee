@@ -37,6 +37,14 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
 
 template = ->
   """
+  <div class="my-header">
+    <img src="static/evenbetter-logo.png"></img>
+    i am a header
+  </div>
   <div class="hello-world-title">HELLO World! :)</div>
   <div class="my-tabs-component"></div>
+  <div class="my-footer">
+    <img src="static/evenbetter-logo.png"></img>
+    i am a footer
+  </div>
   """
