@@ -16,7 +16,7 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
   render: ->
     @$el.append template()
 
-    $tabsElement = @$el.find('.my-tabs-component')
+    $tabsElement = @$el.find('.hello-tabs-component')
 
     tabsView = new TabsView(el: $tabsElement, tabs: [
       {
@@ -37,13 +37,13 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
 
 template = ->
   """
-  <div class="my-header">
+  <div class="hello-header">
     <img src="static/evenbetter-logo.png"></img>
     i am a header
   </div>
   <div class="hello-world-title">HELLO World! :)</div>
-  <div class="my-tabs-component"></div>
-  <div class="my-footer">
+  <div class="hello-tabs-component"></div>
+  <div class="hello-footer">
     <img src="static/evenbetter-logo.png"></img>
     i am a footer
   </div>
