@@ -6,4 +6,5 @@ this is a boilerplate to
 - coffeescript
 - less
 - grunt as build tool with browserify
+- bower for frontend packages
 - node express server
