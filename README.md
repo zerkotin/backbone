@@ -14,7 +14,7 @@ Backbone boilerplate will help you up and run a complete Frontend dev environmen
 - [FontAwesome](http://fontawesome.io/)
 
 ## Installation
-- clone
+- `git clone https://github.com/zerkotin/backbone-presentation.git`
 - `cd backbone-presentation`
 - `npm install`
 - `grunt`
