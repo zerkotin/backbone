@@ -1,7 +1,6 @@
-# backbone-presentation
-backbone presentation site
+# Backbone boilerplate
 
-This boilerplate bundles
+## The Tools
 - Backbone
 - Coffeescript
 - Less
