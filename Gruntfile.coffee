@@ -49,6 +49,14 @@ module.exports = (grunt) ->
           filter: 'isFile'
           flatten: true
         ]
+      fontawesomeCss:
+        files: [
+          expand: true
+          src: ['src/style/fontawesome/css/*']
+          dest: 'build/'
+          filter: 'isFile'
+          flatten: true
+        ]
       html:
         files: [
           src: ['src/index.html']

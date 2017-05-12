@@ -25,9 +25,9 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
         viewOptions: {text: 'i am tab Itzik'}
       }
       {
-        name: 'resa'
+        name: 'sema'
         viewConstructor: TextView
-        viewOptions: {text: 'i am tab Theresa'}
+        viewOptions: {text: 'i am tab Sema'}
       }
       ])
 
@@ -38,13 +38,12 @@ exports.HelloWorldView = class HelloWorldView extends Backbone.View
 template = ->
   """
   <div class="hello-header">
-    <img src="static/evenbetter-logo.png"></img>
     i am a header
+    <i class="fa fa-anchor" aria-hidden="true"></i>
   </div>
   <div class="hello-world-title">HELLO World! :)</div>
   <div class="hello-tabs-component"></div>
   <div class="hello-footer">
-    <img src="static/evenbetter-logo.png"></img>
     i am a footer
   </div>
   """
