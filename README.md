@@ -9,7 +9,7 @@ Backbone boilerplate will help you up and run a complete Frontend development en
 - [NodeJS](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
 - [Grunt](https://gruntjs.com/)
-- Bower
+- [Bower](https://bower.io)
 - [Browserify](http://browserify.org/)
 - [Less](http://lesscss.org/)
 - [FontAwesome](http://fontawesome.io/)
@@ -17,9 +17,9 @@ Backbone boilerplate will help you up and run a complete Frontend development en
 ## Installation
 
 ### Prerequisites
-- Node and NPM
-- Bower installed globally
-- Grunt CLI installed globally
+- [NodeJS](https://nodejs.org/en/) - you can download and install
+- Bower installed globally - `npm install -g bower`
+- Grunt CLI installed globally - `npm install -g grunt-cli`
 
 ### Installing order
 - `git clone https://github.com/zerkotin/backbone-presentation.git` - clone
@@ -28,9 +28,14 @@ Backbone boilerplate will help you up and run a complete Frontend development en
 - `npm install` - install grunt and dependencies
 - `grunt` - build the app
 - `cd build` - go to build folder
+- `touch server.properties`
 - `npm install` - install server dependencies
 
 ## Running
 - `npm start` - from root folder
 - Open your browser at [localhost:8080](http://localhost:8080/)
+
+## Development
+- `npm run watch` - will run a watcher for coffee, less and server files
+
 
