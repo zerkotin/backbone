@@ -1,5 +1,5 @@
 # Backbone boilerplate
-Backbone boilerplate will help you up and run a complete Frontend dev environment
+Backbone boilerplate will help you up and run a complete Frontend development environment.
 
 ## The Tools
 - [Backbone](http://backbonejs.org/)
@@ -21,6 +21,6 @@ Backbone boilerplate will help you up and run a complete Frontend dev environmen
 
 ## Running
 - `npm start`
-- open browser in [localhost:8080](http://localhost:8080/)
+- Open your browser at [localhost:8080](http://localhost:8080/)
 
 
