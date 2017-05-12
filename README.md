@@ -18,5 +18,6 @@ This boilerplate bundles
 
 ## Running
 - `npm start`
+- open browser in localhost:8080
 
 
