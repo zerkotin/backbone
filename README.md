@@ -17,15 +17,15 @@ Backbone boilerplate will help you up and run a complete Frontend development en
 ## Installation
 
 ### Prerequisites
-- [NodeJS](https://nodejs.org/en/) - you can download and install
-- Bower installed globally - `npm install -g bower`
-- Grunt CLI installed globally - `npm install -g grunt-cli`
+- [NodeJS](https://nodejs.org/en/) installed
+- `npm install -g bower` - Bower installed globally
+- `npm install -g grunt-cli` - Grunt CLI installed globally
 
 ### Installing order
 - `git clone https://github.com/zerkotin/backbone-presentation.git` - clone
 - `cd backbone-presentation` - go to folder
 - `bower install` - install UI packages
-- `npm install` - install grunt and dependencies
+- `npm install` - install build tools
 - `grunt` - build the app
 - `cd build` - go to build folder
 - `touch server.properties`
