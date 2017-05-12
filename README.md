@@ -26,13 +26,11 @@ Backbone boilerplate will help you up and run a complete Frontend development en
 - `cd backbone-presentation` - go to folder
 - `bower install` - install UI packages
 - `npm install` - install grunt and dependencies
+- `grunt` - build the app
 - `cd build` - go to build folder
 - `npm install` - install server dependencies
-- `cd ..` - go back to root folder
-- `grunt` - build the app
 
 ## Running
 - `npm start` - from root folder
 - Open your browser at [localhost:8080](http://localhost:8080/)
-
 
