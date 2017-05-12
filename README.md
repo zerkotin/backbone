@@ -1,4 +1,5 @@
 # Backbone boilerplate
+Backbone boilerplate will help you up and run a complete Frontend dev environment
 
 ## The Tools
 - Backbone
