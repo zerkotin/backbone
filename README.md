@@ -21,6 +21,6 @@ Backbone boilerplate will help you up and run a complete Frontend dev environmen
 
 ## Running
 - `npm start`
-- open browser in localhost:8080
+- open browser in [localhost:8080](http://localhost:8080/)
 
 
