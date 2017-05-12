@@ -1,10 +1,22 @@
 # backbone-presentation
 backbone presentation site
 
-this is a boilerplate to
-- backbone
-- coffeescript
-- less
-- grunt as build tool with browserify
-- bower for frontend packages
-- node express server
+This boilerplate bundles
+- Backbone
+- Coffeescript
+- Less
+- Grunt
+- Browserify
+- Bower
+- Node Express server
+
+## Installation
+- clone
+- `cd backbone-presentation`
+- `npm install`
+- `grunt`
+
+## Running
+- `npm start`
+
+
